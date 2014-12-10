@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "git checkout -- $1"
+echo "really?"
+
+read q
+
+if [ "$q" == "y" ] ; then
+  git checkout -- $1
+fi
+
+exit 0
